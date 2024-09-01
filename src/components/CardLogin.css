@@ -1,0 +1,97 @@
+.body {
+    margin: 0;
+    background-image: url('OIP.gif'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white; 
+    margin-left: 115px;
+  }
+
+  .input-group {
+    position: relative; /* Needed for icon positioning */
+    padding-left: 2.5rem; /* Adjust this value to fit the icon */
+    margin-bottom: 20px; /* Adjust spacing between inputs */
+}
+
+  .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none; /* Makes the icon unclickable */
+}
+
+.submit-button {
+    background: rgba(122, 112, 112, 0.1); 
+    color: white;
+    width: 100%;
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(247, 244, 244, 0.873);
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: rgb(83, 77, 82);
+}
+
+.submit-button:active{
+    box-shadow: 0 0 10px rgba(239, 235, 235, 0.932);
+}
+
+.login-form {
+    background-color: rgba(136, 131, 131, 0.2); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(239, 235, 235, 0.932);
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px 15px; 
+    border: none;
+    border-bottom: 2px solid white; 
+    background: rgba(255, 255, 255, 0.1); 
+    color: white;
+    border-radius: 5px; 
+    outline: none;
+    margin: 10px;
+    box-sizing: border-box;
+    font-size: 16px; 
+}
+
+.input:focus{
+    box-shadow: 0 0 10px rgba(247, 244, 244, 0.873);
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+}
+  
+  .register-link {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .register-link a {
+    color: rgb(247, 242, 242); 
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  

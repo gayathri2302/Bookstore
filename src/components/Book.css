@@ -1,0 +1,260 @@
+.App {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+  }
+  
+  .header-left,
+  .header-right {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .header-left {
+    margin-right: auto;
+  }
+  
+  .header-right {
+    margin-left: auto;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .search-bar {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .search-bar button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .voting-schedule {
+    margin-bottom: 40px;
+  }
+  
+  .categories {
+    margin-bottom: 40px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .book-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .book-card p {
+    margin: 10px 0;
+  }
+  
+  .book-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .rating span {
+    margin-left: 5px;
+  }
+  
+  .previous-years {
+    margin-bottom: 40px;
+  }
+  
+ /* General styling */
+.book-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.book-card:hover {
+  transform: scale(1.02);
+}
+
+.book-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* Summary view styling */
+.book-summary {
+  display: block;
+}
+
+/* Details view styling */
+.book-details {
+  display: block;
+}
+
+.book-details .description {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Hide details when in summary view */
+.book-summary .description {
+  display: none;
+}
+
+
+/* General styling */
+.book-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative; /* Necessary for absolute positioning of the description */
+}
+
+.book-card:hover {
+  transform: scale(1.02);
+}
+
+.book-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.book-summary, .book-details {
+  position: relative;
+}
+
+/* Hide description by default */
+.book-details .description {
+  display: none;
+}
+
+/* Show description on hover */
+.book-card:hover .book-summary {
+  opacity: 0;
+}
+
+.book-card:hover .book-details .description {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Header styling */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  margin-right: 20px;
+}
+
+.search-bar input {
+  padding: 5px;
+}
+
+.search-bar button {
+  padding: 5px;
+}
+
+.filters select {
+  margin-left: 10px;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-arrow {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-arrow.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 20px;
+  font-size: 16px;
+}

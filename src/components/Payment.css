@@ -1,0 +1,41 @@
+.product-summary {
+    margin-bottom: 20px;
+}
+
+.product-summary .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.shipping-information,
+.payment-details {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5469d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
